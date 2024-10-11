@@ -1,3 +1,6 @@
+import React from 'react';
+import Image from 'next/image';
+
 export default function Education() {
 	return (
 		<main className="flex items-center justify-center min-h-screen p-8">
@@ -6,11 +9,7 @@ export default function Education() {
 					Education
 				</h1>
 				<div className="mt-4 flex items-center justify-center p-4 rounded-lg">
-					<img
-						src="/ucf.png"
-						alt={"UCF Logo"}
-						className="w-1/3 object-contain"
-					/>
+					<Image src="/ucf.png" alt={"UCF Logo"} className="w-1/3 object-contain" width={2048} height={2048} />
 					
 					<div className="  text-gray-200 rounded-lg mx-auto">
 						<h1 className="text-3xl font-bold text-white">University of Central Florida</h1>

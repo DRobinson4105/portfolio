@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Navbar() {
     return (
         <nav className="bg-black-900 fixed top-0 left-0 w-full border-b border-gray-600 z-50">

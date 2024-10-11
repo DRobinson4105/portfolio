@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function Projects() {
     interface Project {
@@ -10,7 +11,7 @@ export default function Projects() {
         github: string;
         live?: string;
     }
-    
+
     const projects: Project[] = [
 		{
             title: 'SimplyASL',
@@ -51,10 +52,11 @@ export default function Projects() {
 		return (
 		  <div className="bg-gray-900 text-white rounded-lg shadow-lg mx-4 my-4 max-w-md min-h-[400px]">
 			<div className="relative">
-			  <img
+			  <Image 
 				src={project.image}
 				alt={project.title}
 				className="w-full h-36 object-cover rounded-t-lg"
+                width={2048} height={2048}
 			  />
 			</div>
 	  
@@ -103,7 +105,7 @@ export default function Projects() {
 
     return (
 		<main className="flex flex-col w-full mx-auto items-center justify-center min-h-screen p-8">
-			<h1 className="text-6xl font-bold text-blue-400 mb-8 text-center">
+			<h1 className="text-6xl font-bold text-blue-400 my-20 text-center">
 				Projects
 			</h1>
 			<div className="container mx-auto px-4">
