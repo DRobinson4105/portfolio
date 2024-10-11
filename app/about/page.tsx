@@ -29,7 +29,7 @@ export default function About() {
 	const HoverIcon: React.FC<{ name: string }> = ({ name }) => {
 		return (
 			<div className="relative flex items-center justify-center w-24 h-24 p-4 rounded-lg group">
-				<Image src={`/${name}.png`} alt={name} className="w-16 h-16 object-contain" width={2048} height={2048} />
+				<Image src={`/${name.toLowerCase()}.png`} alt={name} className="w-16 h-16 object-contain" width={2048} height={2048} />
 		
 				<span className="absolute bottom-full mb-2 px-3 py-1 text-sm font-semibold text-white bg-gray-800 rounded-md opacity-0 transition-opacity duration-300 group-hover:opacity-100">
 					{name}
