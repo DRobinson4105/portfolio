@@ -1,0 +1,194 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[normalem]{ulem}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge David Robinson} \\ \vspace{2pt} \small
+    \faCode\hspace{0.25pt} \href{https://www.davidrobinson.info/}{\uline{davidrobinson.info}}
+    \faEnvelope\hspace{0.25pt} \href{mailto:drobinson4105@gmail.com}{\uline{drobinson4105@gmail.com}}
+    \faLinkedin\hspace{0.25pt} \href{https://linkedin.com/in/davidrobinson05}{\uline{linkedin.com/in/davidrobinson05}}
+    \faGithub\hspace{0.25pt} \href{https://github.com/DRobinson4105}{\uline{github.com/DRobinson4105}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Central Florida}{May 2026}
+      {Bachelor of Science in Computer Science, Intelligent Robotic Systems Minor}{3.91 GPA}
+    \educationItem{\textbf{Certifications}: AWS Cloud Practitioner}
+    \educationItem{\textbf{Awards}: UCF Dean's Honor List x2, Florida Academic Scholar}
+    \educationItem{\textbf{Relevant Coursework}: Computer Vision, Data Structures and Algorithms, Software Engineering, Linear Algebra}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Undergraduate Research Assistant}{Orlando, FL}
+      {UCF Center for Research in Computer Vision}{Aug 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Tailored \textbf{Meta AI’s Sapiens Pose and Depth Estimation} models to estimate \textbf{3D pose keypoints} in hand-object interactions, facilitating precise identification of contact points.}
+        \resumeItem{Trained U-Net architecture for semantic segmentation on Pascal VOC, achieving \textbf{63.2 mIoU} accuracy.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineering Intern}{Orlando, FL}
+      {Dynamic Animation Systems}{Aug 2023 -- July 2024}
+      \resumeItemListStart
+        \resumeItem{Fine-tuned the \textbf{Mistral-7B} Large Language Model (LLM) to understand and generate dynamic simulation scenario files.}
+        \resumeItem{Enhanced a Domain-Specific Language (DSL) in \textbf{JetBrains MPS} to streamline behavior models between a web server and a behavior engine.}
+        \resumeItem{Developed a \textbf{Truffle-based interpreter} running on GraalVM, achieving a \textbf{500\% performance} boost by integrating \textbf{JMH benchmarking}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/DRobinson4105/Simply-ASL}{\textbf{\uline{SimplyASL}}} $|$ \emph{PyTorch, Swift, Flask, OpenCV, OpenAI, Langchain, NumPy}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a \textbf{real-time visualization system} using \textbf{OpenCV} to display ASL by mapping 2D keypoints.}
+            \resumeItem{Performed inference with Meta AI’s Sapiens Pose Estimation model to generate \textbf{2D pose} representations of ASL signs.}
+            \resumeItem{Leveraged \textbf{OpenAI's GPT-4} to translate English words into ASL Gloss tokens with \textbf{prompt engineering}.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://github.com/DRobinson4105/accelify}{\textbf{\uline{Accelify}}} $|$ \emph{PyTorch, MongoDB, Pandas, NumPy, Scikit-Learn, Flask, Python}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and trained a \textbf{PyTorch LSTM-based architecture} to predict product recommendations based on industry and product-related embeddings, resulting in a \textbf{95.83\% reduction in loss}.}
+            \resumeItem{Generated a recommendation dataset using TF-IDF, co-occurrence matrices, and scoring mechanisms with \textbf{150+ entries}.}
+            \resumeItem{Automated real-time data retrieval and model updates via MongoDB with each API call.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://github.com/DRobinson4105/bookmate}{\textbf{\uline{BookMate}}} $|$ \emph{PyTorch, Selenium, NextJS 13, Flask, Python, R}}{}
+          \resumeItemListStart
+            \resumeItem{Utilized \textbf{R} to visualize and \textbf{analyze training loss curves}, enhancing model evaluation and \textbf{performance tuning}.}
+            \resumeItem{Trained the \textbf{YOLOv8} model on filtered barcode datasets, achieving \textbf{98.3 mAP} for identifying ISBNs.}
+            \resumeItem{Developed a \textbf{PyTorch regression model} to determine optimal selling prices for books, reaching \textbf{3.9 MSE Loss}.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, R, SQL, Java, LaTeX} \\
+     \textbf{Tools \& Databases}{: AWS, Git, Prisma, Hugging Face, Langchain, MongoDB, MySQL, PostgreSQL} \\
+     \textbf{Libraries \& Frameworks}{: PyTorch, TensorFlow, Pandas, NumPy, Matplotlib, Flask, Scikit-Learn, Keras}
+    }}
+ \end{itemize}
+
+%-----------CAMPUS INVOLVEMENT-----------
+\section{Campus Involvement}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {UCF Programming Team}{Orlando, FL}
+      {Member}{Sep 2023 -- Sep 2024}
+      \resumeItemListStart
+        \resumeItem{Achieved \textbf{4th place} in the 2023 \textbf{ICPC Big South Regional} Division 2 Contest out of \textbf{100+ Universities}.}
+        \resumeItem{Created and \textbf{judged problem sets} for the UCF High School Programming Contest for \textbf{80+ teams}.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
