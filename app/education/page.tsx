@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Education() {
 	return (
-		<main className="flex items-center justify-center min-h-screen p-8">
+		<main className="flex items-center justify-center min-h-screen p-8 mt-14">
 			<section className="max-w-6xl w-full mx-auto">
 				<h1 className="text-6xl font-bold text-blue-400 mt-4 text-center">
 					Education

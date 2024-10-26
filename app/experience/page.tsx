@@ -1,4 +1,5 @@
-import React from 'react';
+"use client"
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function Experience() {
@@ -51,32 +52,62 @@ export default function Experience() {
                 </div>
         
                 <div className="ml-6 w-3/4 mb-4 mt-4 bg-gray-900 p-4 rounded-lg shadow-lg flex items-center">
-                <div className="flex-shrink-0 w-20 h-20 mr-4">
-                    <Image src={event.src} alt="Event Image" className="w-full h-full object-cover rounded-lg" width={2048} height={2048} />
-                </div>
-        
-                <div className="flex-grow">
-                    <h3 className="text-lg font-bold text-white">{event.title}</h3>
-                    <h4 className="text-md font-semibold mb-2 text-white">{event.subtitle}</h4>
-                    <p className="text-sm text-gray-300">{event.description}</p>
-                    <ul className="list-disc list-inside mt-2 text-gray-300">
-                        {event.points?.map((point: string, index: number) => (
-                            <li key={index}>{point}</li>
-                        ))}
-                    </ul>
+                    <div className="flex-shrink-0 w-20 h-20 mr-4">
+                        <Image src={event.src} alt="Event Image" className="w-full h-full object-cover rounded-lg" width={2048} height={2048} />
+                    </div>
+            
+                    <div className="flex-grow">
+                        <h3 className="text-lg font-bold text-white">{event.title}</h3>
+                        <h4 className="text-md font-semibold mb-2 text-white">{event.subtitle}</h4>
+                        <p className="text-sm text-gray-300">{event.description}</p>
+                        <ul className="list-disc list-inside mt-2 text-gray-300">
+                            {event.points?.map((point: string, index: number) => (
+                                <li key={index}>{point}</li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
         );
     };
 
+    const CondensedExperiencePart: React.FC<{ event: Event }> = ({ event }) => {
+        return (
+            <div className="w-1/2 my-5">
+                <h3 className="text-lg font-bold text-white">{event.title}</h3>
+                <h4 className="text-md font-semibold text-white">{event.subtitle}</h4>
+                <p className="text-blue-400 font-semibold my-2">{event.date}</p>
+                <p className="text-sm text-gray-300">{event.description}</p>
+                <ul className="text-sm list-disc list-inside mt-2 text-gray-300">
+                    {event.points?.map((point: string, index: number) => (
+                        <li key={index}>{point}</li>
+                    ))}
+                </ul>
+            </div>
+        );
+    }
+
+    const windowThreshold = 1000
+    const [isCondensed, setIsCondensed] = useState<boolean>(window.innerWidth < windowThreshold);
+
+    useEffect(() => {
+        const handleResize = () => setIsCondensed(window.innerWidth < windowThreshold);
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
-        <main className="flex flex-col w-full mx-auto items-center justify-center min-h-screen p-8">
+        <main className="flex flex-col w-full mx-auto items-center justify-center min-h-screen p-8 mt-14">
             <h1 className="text-6xl font-bold text-blue-400 mb-8 text-center">
                 Experience
             </h1>
             {events.map((event, index) => (
-                <ExperiencePart event={event} key={index} />
+                isCondensed ? (
+                    <CondensedExperiencePart event={event} key={index} />
+                ) : (
+                    <ExperiencePart event={event} key={index} />
+                )
             ))}
         </main>
     );
