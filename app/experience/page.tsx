@@ -73,7 +73,7 @@ export default function Experience() {
 
     const CondensedExperiencePart: React.FC<{ event: Event }> = ({ event }) => {
         return (
-            <div className="w-1/2 my-5">
+            <div className="w-3/4 my-5">
                 <h3 className="text-lg font-bold text-white">{event.title}</h3>
                 <h4 className="text-md font-semibold text-white">{event.subtitle}</h4>
                 <p className="text-blue-400 font-semibold my-2">{event.date}</p>
@@ -94,7 +94,7 @@ export default function Experience() {
         const handleResize = () => setIsCondensed(window.innerWidth < windowThreshold);
 
         handleResize();
-        
+
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
