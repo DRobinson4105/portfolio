@@ -88,12 +88,14 @@ export default function Experience() {
     }
 
     const windowThreshold = 1000
-    const [isCondensed, setIsCondensed] = useState<boolean>(window.innerWidth < windowThreshold);
+    const [isCondensed, setIsCondensed] = useState<boolean>(false);
 
     useEffect(() => {
         const handleResize = () => setIsCondensed(window.innerWidth < windowThreshold);
-        window.addEventListener('resize', handleResize);
 
+        handleResize();
+        
+        window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
