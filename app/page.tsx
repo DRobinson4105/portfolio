@@ -15,7 +15,7 @@ export default function Home() {
 					I&apos;m involved in research at UCF&apos;s Center for Research in Computer Vision.
 				</p>
 				<div className="flex items-center space-x-4 mt-8">
-					<a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+					<a href="/david_robinson_resume.pdf" target="_blank" rel="noopener noreferrer">
 						<Button color="primary" variant="ghost" className="" size="lg">
 							Resume
 						</Button>
