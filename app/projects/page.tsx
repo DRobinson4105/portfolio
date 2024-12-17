@@ -43,8 +43,7 @@ export default function Projects() {
             description: 'An application that assists in the process of selling books on Amazon by taking in photos of the books to be sold and determines the best price to sell each book at.',
             image: '/testifai.png',
             skills: ['Python', 'Langchain', 'Flask', 'Next.js', 'TypeScript', 'Tailwind CSS', 'OpenAI'],
-            github: 'https://github.com/DRobinson4105/TestifAI',
-            live: 'https://www.testifai.study/'
+            github: 'https://github.com/DRobinson4105/TestifAI'
         }
     ]
 
