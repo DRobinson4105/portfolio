@@ -21,7 +21,7 @@ export default function Home() {
 						</Button>
 					</a>
 					<a
-						href="https://github.com/DRobinson4105"
+						href="https://www.github.com/DRobinson4105"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-gray-300 hover:text-white transition-colors"
