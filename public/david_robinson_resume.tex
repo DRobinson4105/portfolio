@@ -1,5 +1,6 @@
 % chktex-file 1
 % chktex-file 8
+% chktex-file 36
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -93,8 +94,9 @@
     \resumeSubheading
       {University of Central Florida}{December 2026}
       {Bachelor of Science in Computer Science, Data Science Minor}{3.93 GPA}
-    \educationItem{\textbf{Certifications and Awards}: AWS Cloud Practitioner, UCF Dean's Honor List x4, Florida Academic Scholar}
-    \educationItem{\textbf{Relevant Coursework}: Computer Vision, Data Structures and Algorithms I \& II, Software Engineering, Linear Algebra}
+    \educationItem{\textbf{Certifications}: AWS Cloud Practitioner}
+    \educationItem{\textbf{Awards}: UCF Dean's Honor List x4, Florida Academic Scholar}
+    \educationItem{\textbf{Relevant Coursework}: Computer Vision, Data Structures and Algorithms, Software Engineering, Linear Algebra}
   \resumeSubHeadingListEnd
 
 \section{Technical Skills}
@@ -112,15 +114,17 @@
       {Undergraduate Researcher}{Orlando, FL}
       {UCF Center for Research in Computer Vision}{August 2024 -- Present}
       \resumeItemListStart
-        \resumeItem{Led research toward publication in \textbf{ICCV 2025}, focusing on 3D hand and body pose estimation}
-        \resumeItem{Engineered an algorithm for stroke patient movement analysis using \textbf{Meta AI's Sapiens Pose and Depth} models to predict and lift 2D keypoints for 3D pose estimation.}
+        \resumeItem{Created a \textbf{stroke patient movement dataset} for action classification with \textbf{1,048 samples} and fine-tuned MotionBERT and R(2+1)D, achieving \textbf{96.2\%} accuracy.}
+        \resumeItem{Designed a motion analysis algorithm for stroke patient rehabilitation, integrating 3D pose estimation and action classification to assess movement quality.}
+        \resumeItem{Researching \textbf{physics-aware enhancements} to the HOISDF 3D hand pose estimation model, incorporating \textbf{Fourier occupancy fields} and \textbf{neural radiance fields} for improved spatial accuracy and occlusion handling, and a \textbf{temporal transformer encoder} for smoother predictions.}
       \resumeItemListEnd
     \resumeSubheading
       {Software Engineering Intern}{Orlando, FL}
       {Dynamic Animation Systems}{August 2023 -- July 2024}
       \resumeItemListStart
-        \resumeItem{Fine-tuned the \textbf{Mistral-7B} Large Language Model (LLM) with \textbf{Hugging Face's Transformers and PEFT} libraries to understand and generate dynamic simulation scenario files.}
-        \resumeItem{Designed an ontology for simulation hosting in on-premises and cloud environments, integrating containerization technologies like Docker and Kubernetes, as well as AWS and GCP to enhance deployment flexibility.}
+        \resumeItem{Fine-tuned the \textbf{Mistral-7B} LLM with \textbf{Hugging Face's Transformers and PEFT} libraries to generate simulation scenario files compliant with an XSD schema.}
+        \resumeItem{Developed a graph-based ordering system to manage transactional processes in a declarative rule-based engine, utilizing breadth-first search and parallel computing for optimized execution efficiency.}
+        \resumeItem{Designed an ontology for simulation hosting, enabling deployment in on-premises and cloud environments using Docker and Kubernetes, with support for AWS and GCP.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -129,13 +133,14 @@
     \resumeProjectHeading
       {\faGithub\hspace{0.25pt} \href{https://github.com/DRobinson4105/Simply-ASL}{\textbf{\uline{SimplyASL}}} $|$ \emph{PyTorch, Swift, Flask, OpenCV, OpenAI, Langchain, NumPy}}{}
       \resumeItemListStart
-        \resumeItem{Deployed Meta AI’s Sapiens Pose Estimation model to generate 2D pose representations of ASL.}
+        \resumeItem{Deployed \textbf{Meta AI’s Sapiens Pose Estimation} model to generate 2D pose representations of ASL.}
+        \resumeItem{Trained an LSTM-based model to generate intermediate frames between ASL signs for smoother transitions.}
         \resumeItem{Engineered few-shot prompting for OpenAI's GPT-4 \textbf{Seq2Seq} model to perform English-to-ASL Gloss translation.}
       \resumeItemListEnd
     \resumeProjectHeading
       {\faGithub\hspace{0.25pt} \href{https://github.com/DRobinson4105/accelify}{\textbf{\uline{Accelify}}} $|$ \emph{PyTorch, MongoDB, Pandas, NumPy, Scikit-Learn, Flask, Python}}{}
       \resumeItemListStart
-        \resumeItem{Built and trained an \textbf{LSTM}-based architecture to recommend ServiceNow Technical Accelerators, achieving a \textbf{95.83} reduction in loss for more accurate recommendations.}
+        \resumeItem{Built and trained a PyTorch neural network combining \textbf{embedding layers}, \textbf{LSTM-based sequence modeling}, and \textbf{fully connected layers} to recommend ServiceNow Technical Accelerators, achieving a \textbf{95.83\%} reduction in loss.}
         \resumeItem{Created a recommendation dataset using TF-IDF, co-occurrence matrices, and scoring mechanisms with \textbf{150+ entries} of sample company and ServiceNow product information.}
       \resumeItemListEnd
     \resumeProjectHeading
@@ -145,12 +150,6 @@
         \resumeItem{Trained the \textbf{YOLOv8} model on filtered barcode datasets, achieving \textbf{98.3 mAP} for identifying ISBNs.}
         \resumeItem{Built a PyTorch regression model to determine optimal selling prices for books, reaching \textbf{3.9 MSE Loss}.}
       \resumeItemListEnd
-    \resumeProjectHeading
-      {\faGithub\hspace{0.25pt} \href{https://github.com/ModelingValueGroup/dclareForMPS}{\textbf{\uline{DclareForMPS}}} $|$ \emph{Java, JUnit, Jetbrains MPS}}{}
-      \resumeItemListStart
-        \resumeItem{Designed and implemented a graph-based ordering system to store imperative transactions, leveraging breadth-first search and parallel computing to optimize execution efficiency.}
-        \resumeItem{Improved rule handling by enabling inner expressions and rules to respect all forms of light and full quotations.}
-      \resumeItemListEnd
   \resumeSubHeadingListEnd
 \section{Campus Involvement}
   \resumeSubHeadingListStart
@@ -158,7 +157,7 @@
       {UCF Programming Team}{Orlando, FL}
       {Member}{Sep 2023 -- Sep 2024}
       \resumeItemListStart
-        \resumeItem{Achieved \textbf{4th place} in the 2023 \textbf{ICPC Big South Regional} Division 2 Contest out of \textbf{100+ Universities}.}
+        \resumeItem{Achieved \textbf{4th place} in the 2023 \textbf{ICPC North America South Regional} Contest out of \textbf{100+ Universities}.}
         \resumeItem{Created and judged problem sets for the UCF High School Programming Contest for \textbf{80+ teams}.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
