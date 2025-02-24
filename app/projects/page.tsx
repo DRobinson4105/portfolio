@@ -32,7 +32,7 @@ export default function Projects() {
       	{
             title: 'BookMate',
             data: 'March 2024 - June 2024',
-            description: 'A study-enhancement application that optimizes learning efficiency by reading PDF-based study materials, including notes, presentation slides, and homework, and generating practice questions from them.',
+            description: 'An application that assists in the process of selling books on Amazon by taking in photos of the books to be sold and determines the best price to sell each book at.',
             image: '/bookmate.png',
             skills: ['PyTorch', 'YOLOv8', 'Python', 'Flask', 'Selenium', 'R', 'Next.js'],
             github: 'https://github.com/DRobinson4105/bookmate'
@@ -40,7 +40,7 @@ export default function Projects() {
         {
             title: 'TestifAI',
             data: 'October 2023 - December 2023',
-            description: 'An application that assists in the process of selling books on Amazon by taking in photos of the books to be sold and determines the best price to sell each book at.',
+            description: 'A study-enhancement application that optimizes learning efficiency by reading PDF-based study materials, including notes, presentation slides, and homework, and generating practice questions from them.',
             image: '/testifai.png',
             skills: ['Python', 'Langchain', 'Flask', 'Next.js', 'TypeScript', 'Tailwind CSS', 'OpenAI'],
             github: 'https://github.com/DRobinson4105/TestifAI'

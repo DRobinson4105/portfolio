@@ -23,6 +23,11 @@ export default function About() {
 			image: "aws_cloud_practitioner",
 			link: "https://cp.certmetrics.com/amazon/en/public/verify/credential/45d4af9a1415457a95a1ed776e7a4333",
 			alt: "AWS Cloud Practictioner"
+		},
+		{
+			image: "aws_solutions_architect",
+			link: "https://cp.certmetrics.com/amazon/en/public/verify/credential/2833529ad16f4bb09aa6f454b7570651",
+			alt: "AWS Solutions Architect"
 		}
 	]
 	
@@ -46,10 +51,8 @@ export default function About() {
 				</h1>
 				<p className="text-gray-400 text-lg mt-6">
 					I am a Computer Science student at the University of Central Florida with a minor
-					in Intelligent Robotic Systems and I am currently involved in research at UCF&apos;s
-					Center for Research in Computer Vision. I&apos;m passionate about machine learning and
-					robotics, and I am looking forward to continue exploring how these fields come
-					together to drive innovation in technology.
+					in Data Science and I am currently involved in research at UCF&apos;s
+					Center for Research in Computer Vision. I&apos;m passionate about leveraging machine learning to address real-world challenges and enhance human-technology interactions.
 				</p>
 				<p className="text-xl font-bold text-gray-400 mt-4 text-center">
 					Here are a few technologies I&apos;ve been working with recently

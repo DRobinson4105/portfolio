@@ -25,7 +25,7 @@ export default function Education() {
 						</ul>
 						
 						<p className="mt-4">
-							Took classes in Computer Vision, Data Structures and Algorithms, Software Engineering, Linear Algebra
+							Took classes in Computer Vision, Data Structures and Algorithms, Software Engineering, and Linear Algebra
 						</p>
 					</div>
 				</div>

@@ -15,12 +15,13 @@ export default function Experience() {
     const events: Event[] = [
         {
             date: 'August 2024 - Present',
-            title: 'Research Assistant',
+            title: 'Undergraduate Researcher',
             subtitle: 'UCF Center for Research in Computer Vision',
             description: "At the UCF CRCV Lab, I worked with advanced computer vision models to improve 3D pose estimation tasks and apply them to quantify human movement control for patients.",
             points: [
-                "Tailored Meta AI\'s Sapiens Pose and Depth Estimation models to estimate 3D pose keypoints in hand-object interactions, facilitating precise identification of contact points.",
-                "Trained U-Net architecture for semantic segmentation on Pascal VOC, achieving 63.2 mIoU accuracy."
+                "Created a stroke patient movement dataset with 982 samples for action classification and pose estimation to assess movement quality.",
+                "Fine-tuned MotionBERT on the dataset, boosting model accuracy from 74.29% to 91.41% through increased label resolution, dataset cleaning, hyperparameter tuning, and cross-validation.",
+                "Researching enhancements to Hamba by extracting depth-based tokens, integrating object detection and pose estimation to classify and predict 2D object keypoints, and applying Graph-guided Bidirectional Scanning separately for hand-internal, object-internal, and cross hand-object features."
             ],
             src: '/ucf_crcv.png',
         },
@@ -30,9 +31,9 @@ export default function Experience() {
             subtitle: 'Dynamic Animation Systems',
             description: 'My first software engineering internship was at DAS, where I worked with a range of technologies, from Hugging Face and Langchain for Natural Language Processing and LLM training, to JetBrains MPS, the Truffle Language Implementation Framework, and ANTLR for designing and building domain-specific languages.',
             points: [
-                "Fine-tuned the Mistral-7B Large Language Model (LLM) to understand and generate dynamic simulation scenario files.",
-                "Enhanced a Domain-Specific Language (DSL) in JetBrains MPS to streamline behavior models between a web server and a behavior engine.",
-                "Developed a Truffle-based interpreter running on GraalVM, achieving a 500% performance boost by integrating JMH benchmarking."
+                "Fine-tuned the Mistral-7B LLM with Hugging Face's Transformers and PEFT libraries to generate simulation scenario files compliant with an XSD schema.",
+                "Developed a graph-based ordering system to manage transactional processes in a declarative rule-based engine.",
+                "Designed an ontology for simulation hosting, enabling deployment in on-premises and cloud environments using Docker and Kubernetes, with support for AWS and GCP."
             ],
             src: '/das.png',
         }
