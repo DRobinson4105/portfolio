@@ -13,6 +13,14 @@ export default function Projects() {
     }
 
     const projects: Project[] = [
+        {
+            title: 'Accelify',
+            data: 'October 2024 - October 2024',
+            description: 'A web application that recommends ServiceNow Technical Accelerators to companies using a trained, self-adaptive PyTorch model.',
+            image: '/accelify.png',
+            skills: ['PyTorch', 'LSTM', 'MongoDB', 'Pandas', 'NumPy', 'Flask', 'Python', 'Scikit-Learn', 'Next.js'],
+            github: 'https://github.com/DRobinson4105/TestifAI'
+        },
 		{
             title: 'SimplyASL',
             data: 'September 2024 - Present',
@@ -21,14 +29,6 @@ export default function Projects() {
             skills: ['Meta Sapiens', 'PyTorch', 'Swift', 'OpenCV', 'Flask', 'NumPy', 'Langchain', 'OpenAI'],
             github: 'https://github.com/DRobinson4105/Simply-ASL',
         },
-        {
-            title: 'Accelify',
-            data: 'October 2024 - October 2024',
-            description: 'A web application that recommends ServiceNow Technical Accelerators to companies using a trained, self-adaptive PyTorch model.',
-            image: '/accelify.png',
-            skills: ['PyTorch', 'LSTM', 'MongoDB', 'Pandas', 'NumPy', 'Flask', 'Python', 'Scikit-Learn', 'Next.js'],
-            github: 'https://github.com/DRobinson4105/TestifAI'
-        },  
       	{
             title: 'BookMate',
             data: 'March 2024 - June 2024',
