@@ -7,21 +7,30 @@ export default function Experience() {
         date: string;
         title: string;
         subtitle: string;
-        description: string;
+        description?: string;
         points: string[];
-        src: string;
+        src?: string;
     }
 
     const events: Event[] = [
+        {
+            date: 'March 2025 - Present',
+            title: 'Machine Learning Intern',
+            subtitle: 'Contract (Confidential)',
+            points: [
+                "Designed and trained a neural network using letter, phoneme, and metaphone sequences with Embedding-LSTM modules and an MLP, achieving 90.7% accuracy and 93.59% precision on string similarity classification.",
+                "Built a dataset of 4000+ labeled string pairs and engineered feature extraction pipelines including tokenization, phoneme and metaphone generation, sentence embedding cosine similarity, and Levenshtein distance.",
+                "Deployed an ONNX-optimized model into a Flask API for real-time inference, accelerating predictions by 4x through preprocess batching, fuzzy match pruning, JIT compilation, and C++-backed operations."
+            ],
+        },
         {
             date: 'August 2024 - Present',
             title: 'Undergraduate Researcher',
             subtitle: 'UCF Center for Research in Computer Vision',
             description: "At the UCF CRCV Lab, I worked with advanced computer vision models to improve 3D pose estimation tasks and apply them to quantify human movement control for patients.",
             points: [
-                "Created a stroke patient movement dataset with 982 samples for action classification and pose estimation to assess movement quality.",
-                "Fine-tuned MotionBERT on the dataset, boosting model accuracy from 74.29% to 91.41% through increased label resolution, dataset cleaning, hyperparameter tuning, and cross-validation.",
-                "Researching enhancements to Hamba by extracting depth-based tokens, integrating object detection and pose estimation to classify and predict 2D object keypoints, and applying Graph-guided Bidirectional Scanning separately for hand-internal, object-internal, and cross hand-object features."
+                "Built a custom dataset of 1,036 video samples of stroke patients performing Box and Block Tests, segmenting videos into 30-frame clips for temporal action classification.",
+                "Fine-tuned and benchmarked neural networks (R3D, R2Plus1D, Video Swin Transformer, Video MViT, MotionBERT, PoseConv3D, MS-G3D) for movement analysis, achieving up to 90.18% accuracy across different seeds.",
             ],
             src: '/ucf_crcv.png',
         },
@@ -53,9 +62,9 @@ export default function Experience() {
                 </div>
         
                 <div className="ml-6 w-3/4 mb-4 mt-4 bg-gray-900 p-4 rounded-lg shadow-lg flex items-center">
-                    <div className="flex-shrink-0 w-20 h-20 mr-4">
-                        <Image src={event.src} alt="Event Image" className="w-full h-full object-cover rounded-lg" width={2048} height={2048} />
-                    </div>
+                    {event.src ? <div className="flex-shrink-0 w-20 h-20 mr-4">
+                         <Image src={event.src} alt="Event Image" className="w-full h-full object-cover rounded-lg" width={2048} height={2048} />
+                    </div> : <></>}
             
                     <div className="flex-grow">
                         <h3 className="text-lg font-bold text-white">{event.title}</h3>

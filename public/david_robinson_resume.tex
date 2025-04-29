@@ -24,7 +24,7 @@
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{1.25in}
 
 \urlstyle{same}
 
@@ -93,58 +93,57 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Central Florida}{December 2026}
-      {Bachelor of Science in Computer Science, Data Science Minor}{3.93 GPA}
+      {Bachelor of Science in Computer Science, Intelligent Robotic Systems Minor}{3.93 GPA}
     \educationItem{\textbf{Certifications}: AWS Cloud Practitioner, AWS Solutions Architect}
-    \educationItem{\textbf{Awards}: UCF Principal's Honor List, UCF Dean's Honor List x4, Florida Academic Scholar}
+    \educationItem{\textbf{Awards}: UCF Principal's Honor List, UCF Dean's Honor List x4, Florida Academic Scholar (Bright Futures)}
     \educationItem{\textbf{Relevant Coursework}: Computer Vision, Data Structures and Algorithms, Artificial Intelligence, Linear Algebra}
   \resumeSubHeadingListEnd
 
 \section{Technical Skills}
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      \textbf{Languages:}{ Python, C/C++, R, SQL, Java, LaTeX, JavaScript} \\
-      \textbf{Tools \& Platforms:}{ AWS, Git, MongoDB, MySQL, PostgreSQL, MS Office Suite, Docker, Kubernetes} \\
-      \textbf{Libraries \& Frameworks:}{ PyTorch, TensorFlow, Pandas, NumPy, Matplotlib, Hugging Face, NodeJS, Flask, React}
+      \textbf{Languages:}{ Python, C/C++, SQL, Java, JavaScript, R, LaTeX} \\
+      \textbf{Machine Learning:}{ PyTorch, TensorFlow, Scikit-Learn, Transformers, Sentence-Transformers, ONNXRuntime, OpenCV, YOLO, MMDetection, TorchScript} \\
+      \textbf{Tools and Platforms:}{ AWS, Docker, Kubernetes, Flask, Git, MongoDB, MySQL, PostgreSQL, Pandas, NumPy, Matplotlib}
     }}
   \end{itemize}
 
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
+      {Machine Learning Intern}{Remote}
+      {Contract (Confidential)}{March 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Designed and trained a neural network using letter, phoneme, and metaphone sequences with Embedding-LSTM modules and an MLP, achieving \textbf{90.7\%} accuracy and \textbf{93.59\%} precision on string similarity classification.}
+        \resumeItem{Built a dataset of \textbf{4000+} labeled string pairs and engineered feature extraction pipelines including tokenization, phoneme and metaphone generation, sentence embedding cosine similarity, and Levenshtein distance.}
+        \resumeItem{Deployed an \textbf{ONNX}-optimized model into a Flask API for real-time inference, accelerating predictions by \textbf{4$\times$} through preprocess batching, fuzzy match pruning, JIT compilation, and C++-backed operations.}
+      \resumeItemListEnd
+    \resumeSubheading
       {Undergraduate Researcher}{Orlando, FL}
       {UCF Center for Research in Computer Vision}{August 2024 -- Present}
       \resumeItemListStart
-        \resumeItem{Created a dataset with \textbf{982 samples} for action classification and pose estimation to assess stroke patient movement quality.}
-        \resumeItem{Fine-tuned \textbf{MotionBERT} on the dataset, \textbf{boosting model accuracy} from \textbf{74.29\%} to \textbf{91.41\%} through increased label resolution, dataset cleaning, hyperparameter tuning, and cross-validation.}
-        \resumeItem{Researching enhancements to \textbf{Hamba} by extracting depth-based tokens, integrating object detection and pose estimation to classify and predict 2D object keypoints, and applying \textbf{Graph-guided Bidirectional Scanning} separately for hand-internal, object-internal, and cross hand-object features.}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Software Engineering Intern}{Orlando, FL}
-      {Dynamic Animation Systems}{August 2023 -- July 2024}
-      \resumeItemListStart
-        \resumeItem{Fine-tuned the \textbf{Mistral-7B} LLM with \textbf{Hugging Face's Transformers and PEFT} libraries to generate simulation scenario files compliant with an XSD schema.}
-        \resumeItem{Developed a graph-based ordering system to manage transactional processes in a declarative rule-based engine.}
-        \resumeItem{Designed an ontology for simulation hosting, enabling deployment in on-premises and cloud environments using \textbf{Docker} and \textbf{Kubernetes}, with support for \textbf{AWS} and \textbf{GCP}.}
+        \resumeItem{Built a custom dataset of \textbf{1,036} video samples of stroke patients performing Box and Block Tests, segmenting videos into 30-frame clips for temporal action classification.}
+        \resumeItem{Fine-tuned and benchmarked neural networks (R3D, R2Plus1D, Video Swin Transformer, Video MViT, MotionBERT, PoseConv3D, MS-G3D) for movement analysis, achieving up to \textbf{90.18\%} accuracy across different seeds.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeProjectHeading
-      {\faGithub\hspace{0.25pt} \href{https://github.com/DRobinson4105/Simply-ASL}{\textbf{\uline{SimplyASL}}} $|$ \emph{PyTorch, Swift, Flask, OpenCV, OpenAI, Langchain, NumPy}}{}
+      {\href{https://github.com/DRobinson4105/Simply-ASL}{\textbf{\uline{SimplyASL}}} $|$ \emph{PyTorch, Swift, Flask, OpenCV, OpenAI, Langchain, NumPy}}{}
       \resumeItemListStart
         \resumeItem{Deployed \textbf{Meta AI’s Sapiens Pose Estimation} model to generate 2D pose representations of ASL.}
         \resumeItem{Trained an LSTM-based model to generate intermediate frames between ASL signs for smoother transitions.}
         \resumeItem{Implemented \textbf{few-shot prompting} techniques to improve English-to-ASL Gloss translation using OpenAI's GPT-4 Seq2Seq model.}
       \resumeItemListEnd
     \resumeProjectHeading
-      {\faGithub\hspace{0.25pt} \href{https://github.com/DRobinson4105/accelify}{\textbf{\uline{Accelify}}} $|$ \emph{PyTorch, MongoDB, Pandas, NumPy, Scikit-Learn, Flask, Python}}{}
+      {\href{https://github.com/DRobinson4105/accelify}{\textbf{\uline{Accelify}}} $|$ \emph{PyTorch, MongoDB, Pandas, NumPy, Scikit-Learn, Flask, Python}}{}
       \resumeItemListStart
         \resumeItem{Built and trained a PyTorch neural network combining \textbf{embedding layers}, \textbf{LSTM-based sequence modeling}, and \textbf{fully connected layers} to recommend ServiceNow Technical Accelerators, achieving a \textbf{95.83\%} reduction in loss.}
         \resumeItem{Created a recommendation dataset using TF-IDF, co-occurrence matrices, and scoring mechanisms with \textbf{150+ entries} of sample company and ServiceNow product information.}
       \resumeItemListEnd
     \resumeProjectHeading
-      {\faGithub\hspace{0.25pt} \href{https://github.com/DRobinson4105/bookmate}{\textbf{\uline{BookMate}}} $|$ \emph{PyTorch, Selenium, NextJS 13, Flask, Python, R}}{}
+      {\href{https://github.com/DRobinson4105/bookmate}{\textbf{\uline{BookMate}}} $|$ \emph{PyTorch, Selenium, NextJS 13, Flask, Python, R}}{}
       \resumeItemListStart
         \resumeItem{Leveraged \textbf{R} to track loss and accuracy curves for hyperparameter tuning and performance optimization.}
         \resumeItem{Trained the \textbf{YOLOv8} model on filtered barcode datasets, achieving \textbf{98.3 mAP} for identifying ISBNs.}
