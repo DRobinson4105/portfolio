@@ -14,33 +14,41 @@ export default function Projects() {
 
     const projects: Project[] = [
         {
+            title: 'Cards of Ash',
+            data: 'October 2024 - October 2024',
+            description: 'A Menko-inspired card game that teaches players about natural disasters through strategic play.',
+            image: '/cards_of_ash.png',
+            skills: ['Godot Engine', 'C#', '.NET'],
+            github: 'https://github.com/noranguy/Cards-of-Ash'
+        },
+        {
             title: 'Accelify',
             data: 'October 2024 - October 2024',
             description: 'A web application that recommends ServiceNow Technical Accelerators to companies using a trained, self-adaptive PyTorch model.',
             image: '/accelify.png',
-            skills: ['PyTorch', 'LSTM', 'MongoDB', 'Pandas', 'NumPy', 'Flask', 'Python', 'Scikit-Learn', 'Next.js'],
+            skills: ['PyTorch', 'MongoDB', 'Pandas', 'NumPy', 'Flask'],
             github: 'https://github.com/DRobinson4105/TestifAI'
         },
 		{
             title: 'SimplyASL',
             data: 'September 2024 - Present',
-            description: "A mobile application that incorporates Meta's Sapiens family of models, Apple's new native speech to text library, and various other technologies to create a simulated translation of English speech to ASL.",
+            description: "A mobile app that translates English speech into ASL signs using a custom gloss-to-pose dictionary.",
             image: '/simplyasl.png',
-            skills: ['Meta Sapiens', 'PyTorch', 'Swift', 'OpenCV', 'Flask', 'NumPy', 'Langchain', 'OpenAI'],
+            skills: ['PyTorch', 'Swift', 'OpenCV', 'Flask', 'NumPy', 'Langchain', 'OpenAI'],
             github: 'https://github.com/DRobinson4105/Simply-ASL',
         },
       	{
             title: 'BookMate',
             data: 'March 2024 - June 2024',
-            description: 'An application that assists in the process of selling books on Amazon by taking in photos of the books to be sold and determines the best price to sell each book at.',
+            description: 'An app that helps sell books on Amazon by analyzing photos and Amazon listings to suggest optimal prices.',
             image: '/bookmate.png',
-            skills: ['PyTorch', 'YOLOv8', 'Python', 'Flask', 'Selenium', 'R', 'Next.js'],
+            skills: ['PyTorch', 'YOLOv8', 'Python', 'Flask', 'Selenium', 'R'],
             github: 'https://github.com/DRobinson4105/bookmate'
         },
         {
             title: 'TestifAI',
             data: 'October 2023 - December 2023',
-            description: 'A study-enhancement application that optimizes learning efficiency by reading PDF-based study materials, including notes, presentation slides, and homework, and generating practice questions from them.',
+            description: 'A study app that reads PDFs and generates practice questions to optimize learning efficiency.',
             image: '/testifai.png',
             skills: ['Python', 'Langchain', 'Flask', 'Next.js', 'TypeScript', 'Tailwind CSS', 'OpenAI'],
             github: 'https://github.com/DRobinson4105/TestifAI'
