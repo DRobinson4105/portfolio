@@ -9,9 +9,11 @@ export default function Education() {
 					Education
 				</h1>
 				<div className="mt-4 flex items-center justify-center p-4 rounded-lg">
-					<Image src="/ucf.png" alt={"UCF Logo"} className="w-1/3 object-contain" width={2048} height={2048} />
-					
-					<div className="  text-gray-200 rounded-lg mx-auto">
+					<div className='w-1/3 h-auto flex items-center justify-center'>
+						<Image src="/ucf.png" alt={"University of Central Florida Logo"} className=" h-full w-auto object-contain" width={2048} height={2048} />
+					</div>
+
+					<div className="w-2/3 text-gray-200 rounded-lg mx-auto">
 						<h1 className="text-3xl font-bold text-white">University of Central Florida</h1>
 						<h2 className="text-lg font-semibold mt-2">
 							Bachelor of Science in Computer Science, Intelligent Robotic Systems Minor
@@ -25,9 +27,27 @@ export default function Education() {
 						</ul>
 						
 						<p className="mt-4">
-							Took classes in Computer Vision, Data Structures and Algorithms, Software Engineering, and Linear Algebra
+							Took courses in Computer Vision, Data Structures and Algorithms, Software Engineering, and Linear Algebra
 						</p>
 					</div>
+				</div>
+				<div className="mt-4 flex items-center justify-center p-4 rounded-lg">
+					<div className='w-1/3 flex items-center justify-center'>
+						<Image src="/ku.png" alt={"Kyoto University Logo"} className="w-3/5 object-contain" width={2048} height={2048} />
+					</div>
+					
+					<div className="w-2/3 text-gray-200 rounded-lg mx-auto">
+						<h1 className="text-3xl font-bold text-white">Kyoto University</h1>
+						<h2 className="text-lg font-semibold mt-2">
+							Study Abroad Program
+						</h2>
+						<p className="text-sm text-gray-400 mt-1">May 2025 - July 2025</p>
+						
+						<p className="mt-4">
+							Took courses in Artificial Intelligence for Virtual Environments and Games, Japanese Language, and Japanese Culture
+						</p>
+					</div>
+					
 				</div>
 			</section>
 		</main>

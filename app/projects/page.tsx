@@ -57,58 +57,57 @@ export default function Projects() {
 
     const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
 		return (
-		  <div className="bg-gray-900 text-white rounded-lg shadow-lg mx-4 my-4 max-w-md min-h-[400px]">
-			<div className="relative">
-			  <Image 
-				src={project.image}
-				alt={project.title}
-				className="w-full h-36 object-cover rounded-t-lg"
-                width={2048} height={2048}
-			  />
+			<div className="bg-gray-900 text-white rounded-lg shadow-lg mx-4 my-4 max-w-md min-h-[400px]">
+				<div className="relative">
+				<Image 
+					src={project.image}
+					alt={project.title}
+					className="w-full h-36 object-cover rounded-t-lg"
+					width={2048} height={2048}
+				/>
+				</div>
+		
+				<div className="p-4 text-center flex flex-col justify-between">
+					<h2 className="text-2xl font-bold">{project.title}</h2>
+					<p>{project.description}</p>
+		
+					<div className="flex justify-center mt-4 space-x-4">
+						{project.github && (
+						<a
+							href={project.github}
+							target="_blank"
+							rel="noreferrer"
+							className="border border-white rounded-md px-4 py-2 hover:bg-white hover:text-gray-900"
+						>
+							GitHub
+						</a>
+						)}
+						{project.live && (
+						<a
+							href={project.live}
+							target="_blank"
+							rel="noreferrer"
+							className="border border-white rounded-md px-4 py-2 hover:bg-white hover:text-gray-900"
+						>
+							Live
+						</a>
+						)}
+					</div>
+			
+					<div className="flex flex-wrap justify-center mt-4 gap-2">
+						{project.skills.map((skill: string, index: number) => (
+						<span
+							className="bg-gray-800 rounded-full px-3 py-1 text-sm"
+							key={index}
+						>
+							{skill}
+						</span>
+						))}
+					</div>
+				</div>
 			</div>
-	  
-			<div className="p-4 text-center flex flex-col justify-between">
-			  <h2 className="text-2xl font-bold">{project.title}</h2>
-			  <p>{project.description}</p>
-	  
-			  <div className="flex justify-center mt-4 space-x-4">
-				{project.github && (
-				  <a
-					href={project.github}
-					target="_blank"
-					rel="noreferrer"
-					className="border border-white rounded-md px-4 py-2 hover:bg-white hover:text-gray-900"
-				  >
-					GitHub
-				  </a>
-				)}
-				{project.live && (
-				  <a
-					href={project.live}
-					target="_blank"
-					rel="noreferrer"
-					className="border border-white rounded-md px-4 py-2 hover:bg-white hover:text-gray-900"
-				  >
-					Live
-				  </a>
-				)}
-			  </div>
-	  
-			  <div className="flex flex-wrap justify-center mt-4 gap-2">
-				{project.skills.map((skill: string, index: number) => (
-				  <span
-					className="bg-gray-800 rounded-full px-3 py-1 text-sm"
-					key={index}
-				  >
-					{skill}
-				  </span>
-				))}
-			  </div>
-			</div>
-		  </div>
 		);
-	  };
-      
+	};
 
     return (
 		<main className="flex flex-col w-full mx-auto items-center justify-center min-h-screen p-8">

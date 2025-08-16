@@ -14,16 +14,6 @@ export default function Experience() {
 
     const events: Event[] = [
         {
-            date: 'March 2025 - Present',
-            title: 'Machine Learning Intern',
-            subtitle: 'Contract (Confidential)',
-            points: [
-                "Designed and trained a neural network using letter, phoneme, and metaphone sequences with Embedding-LSTM modules and an MLP, achieving 90.7% accuracy and 93.59% precision on string similarity classification.",
-                "Built a dataset of 4000+ labeled string pairs and engineered feature extraction pipelines including tokenization, phoneme and metaphone generation, sentence embedding cosine similarity, and Levenshtein distance.",
-                "Deployed an ONNX-optimized model into a Flask API for real-time inference, accelerating predictions by 4x through preprocess batching, fuzzy match pruning, JIT compilation, and C++-backed operations."
-            ],
-        },
-        {
             date: 'August 2024 - Present',
             title: 'Undergraduate Researcher',
             subtitle: 'UCF Center for Research in Computer Vision',
@@ -33,6 +23,16 @@ export default function Experience() {
                 "Fine-tuned and benchmarked neural networks (R3D, R2Plus1D, Video Swin Transformer, Video MViT, MotionBERT, PoseConv3D, MS-G3D) for movement analysis, achieving up to 90.18% accuracy across different seeds.",
             ],
             src: '/ucf_crcv.png',
+        },
+        {
+            date: 'March 2025 - May 2025',
+            title: 'Machine Learning Intern',
+            subtitle: 'Contract (Confidential)',
+            points: [
+                "Designed and trained a neural network using letter, phoneme, and metaphone sequences with Embedding-LSTM modules and an MLP, achieving 90.7% accuracy and 93.59% precision on string similarity classification.",
+                "Built a dataset of 4000+ labeled string pairs and engineered feature extraction pipelines including tokenization, phoneme and metaphone generation, sentence embedding cosine similarity, and Levenshtein distance.",
+                "Deployed an ONNX-optimized model into a Flask API for real-time inference, accelerating predictions by 4x through preprocess batching, fuzzy match pruning, JIT compilation, and C++-backed operations."
+            ],
         },
         {
             date: 'August 2023 - July 2024',
