@@ -12,6 +12,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="en">
 			<body className="bg-black-900 text-gray-200"><Navbar/>{children}</body>
+			<Analytics />
 		</html>
 	);
 }
