@@ -92,11 +92,12 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Central Florida}{May 2026}
-      {Bachelor of Science in Computer Science, Intelligent Robotic Systems Minor}{3.93 GPA}
-    \educationItem{\textbf{Certifications}: AWS Cloud Practitioner, AWS Solutions Architect}
-    \educationItem{\textbf{Awards}: UCF Principal's Honor List, UCF Dean's Honor List x4, Florida Academic Scholar (Bright Futures)}
-    \educationItem{\textbf{Relevant Coursework}: Computer Vision, Data Structures and Algorithms, Linear Algebra, Statistical Methods}
+      {University of Central Florida}{}
+      {Bachelor of Science in Computer Science, Intelligent Robotic Systems Minor}{Expected May 2026 -- 3.93 GPA}
+      \resumeSubheading
+        {\vspace{-1.5em}}{}
+        {Master of Science in Computer Vision}{Expected Start August 2026}
+    \educationItem{\textbf{Relevant Coursework}: Computer Vision, Data Structures and Algorithms, Linear Algebra, Artificial Intelligence}
   \resumeSubHeadingListEnd
 
 \section{Technical Skills}
@@ -105,6 +106,7 @@
       \textbf{Languages:}{ Python, C/C++, SQL, Java, JavaScript, R, LaTeX} \\
       \textbf{Machine Learning:}{ PyTorch, TensorFlow, Scikit-Learn, Transformers, Sentence-Transformers, ONNXRuntime, OpenCV, YOLO, MMDetection, TorchScript, LangChain} \\
       \textbf{Tools and Platforms:}{ AWS, Docker, Kubernetes, Flask, Git, MongoDB, MySQL, PostgreSQL, Pandas, NumPy, Matplotlib}
+      \textbf{Certifications}: AWS Cloud Practitioner, AWS Solutions Architect \\
     }}
   \end{itemize}
 
@@ -114,48 +116,45 @@
     {Undergraduate Researcher}{Orlando, FL}
     {UCF Center for Research in Computer Vision}{August 2024 -- Present}
     \resumeItemListStart
-      \resumeItem{Built and analyzed a dataset of \textbf{1,000+} video clips for movement classification using pose estimation and action recognition.}
-      \resumeItem{Fine-tuned and benchmarked neural networks (R3D, R2Plus1D, Video Swin Transformer, Video MViT, MotionBERT, PoseConv3D, MS-G3D) for movement analysis, achieving up to \textbf{90.18\%} accuracy across different seeds.}
+      \resumeItem{Applying state-of-the-art 3D pose estimation models to extract joint angles for quantitative stroke mobility analysis.}
+      \resumeItem{Built and annotated a dataset of \textbf{1,000+} Box and Block Test clips (RGB + 2D pose) labeled with four action classes for stroke mobility research.}
+      \resumeItem{Benchmarked neural networks (R3D, R2Plus1D, Video Swin Transformer, Video MViT, MotionBERT, PoseConv3D, MS-G3D) for movement analysis, achieving up to \textbf{90.18\%} accuracy on the StrokeVision-Bench dataset.}
     \resumeItemListEnd
     \resumeSubheading
       {Machine Learning Engineer}{Remote}
       {Contract}{March 2025 -- May 2025}
       \resumeItemListStart
-        \resumeItem{Designed and trained a neural network using Embedding-LSTM modules and an MLP, achieving \textbf{90.7\%} accuracy and \textbf{93.59\%} precision on a string similarity classification task.}
-        \resumeItem{Built a dataset of \textbf{4,000+} labeled string pairs and engineered feature extraction methods including tokenization, phoneme and metaphone generation, sentence embedding cosine similarity, and Levenshtein distance.}
-        \resumeItem{Deployed an \textbf{ONNX}-optimized model into a Flask API for real-time inference, accelerating predictions by \textbf{4$\times$} through batch preprocessing, fuzzy match pruning, JIT compilation, and C++-backed operations.}
+        \resumeItem{Designed and trained a neural network using Embedding-LSTM modules and an MLP, achieving \textbf{90.7\%} accuracy and \textbf{93.59\%} precision on a custom dataset of \textbf{4,000} labeled string pairs.}
+        \resumeItem{Engineered features (tokenization, phoneme/metaphone generation, embedding similarity, Levenshtein distance) to enhance classification accuracy.}
+        \resumeItem{Deployed an \textbf{ONNX}-optimized model into a Flask API for real-time inference, accelerating predictions by \textbf{4$\times$}.}
       \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \section{Publications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {StrokeVision-Bench: A Multimodal Video and 2D Pose Benchmark for Tracking Stroke Recovery}{} 
+      {\textbf{David Robinson}, Animesh Gupta, Rizwan Qureshi, Qiushi Fu, Mubarak Shah}{}
+      \vspace{0em}
+
+      \textit{Accepted to IEEE MLSP 2025}
   \resumeSubHeadingListEnd
 
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeProjectHeading
-      {\href{https://github.com/DRobinson4105/Simply-ASL}{\textbf{\uline{SimplyASL}}} $|$ \emph{PyTorch, Swift, Flask, OpenCV, OpenAI, LangChain, NumPy}}{}
-      \resumeItemListStart
-        \resumeItem{Generated 2D pose representations of ASL using \textbf{Meta AI’s Sapiens} pose estimation model.}
-        \resumeItem{Constructed an LSTM-based model to interpolate pose keypoints and generate temporally-smooth ASL transitions.}
-      \resumeItemListEnd
-    \resumeProjectHeading
       {\href{https://github.com/DRobinson4105/accelify}{\textbf{\uline{Accelify}}} $|$ \emph{PyTorch, MongoDB, Pandas, NumPy, Scikit-Learn, Flask, Python}}{}
       \resumeItemListStart
-        \resumeItem{Developed a PyTorch neural network combining \textbf{embedding layers}, \textbf{LSTM-based sequence modeling}, and \textbf{fully connected layers} to recommend ServiceNow Technical Accelerators, achieving a \textbf{95.83\%} reduction in loss.}
+        \resumeItem{Developed a PyTorch neural network that recommended ServiceNow Technical Accelerators, reducing loss by \textbf{95.8\%} on a dataset of \textbf{2,000} company-product pairs.}
         \resumeItem{Built a recommendation dataset using TF-IDF and co-occurrence scores on product usage data with \textbf{150+} entries.}
       \resumeItemListEnd
     \resumeProjectHeading
       {\href{https://github.com/DRobinson4105/bookmate}{\textbf{\uline{BookMate}}} $|$ \emph{PyTorch, Selenium, NextJS 13, Flask, Python, R}}{}
       \resumeItemListStart
-        \resumeItem{Trained the \textbf{YOLOv8} model on filtered barcode datasets, achieving \textbf{98.3 mAP} for identifying ISBNs.}
-        \resumeItem{Created a PyTorch regression model to determine optimal selling prices for books, reaching \textbf{3.9 MSE Loss}.}
+        \resumeItem{Trained the \textbf{YOLOv8} model for identifying ISBNs, achieving \textbf{98.3 mAP} on a combined barcode dataset sourced from multiple public datasets.}
+        \resumeItem{Created a PyTorch regression model to determine optimal selling prices for books, reaching \textbf{3.9 MSE Loss} on a self-collected dataset of \textbf{200} Amazon listings.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-\section{Publications}
-\resumeSubHeadingListStart
-  \resumeSubheading
-    {StrokeVision-Bench: A Multimodal Video and 2D Pose Benchmark for Tracking Stroke Recovery}{} 
-    {\textbf{David Robinson}, Animesh Gupta, Rizwan Qureshi, Qiushi Fu, Mubarak Shah}{} \\
-    \vspace{0.75em}
-    \textit{Accepted to IEEE MLSP 2025}
-\resumeSubHeadingListEnd
 
 \section{Campus Involvement}
   \resumeSubHeadingListStart
@@ -163,8 +162,7 @@
       {UCF Programming Team}{Orlando, FL}
       {Member}{Sep 2023 -- Sep 2024}
       \resumeItemListStart
-        \resumeItem{Collaborated with teammates to solve advanced algorithmic problems under timed competition constraints.}
-        \resumeItem{Achieved \textbf{4th place} in the 2023 \textbf{ICPC North America South Regional} Contest out of \textbf{100+ Teams}.}
+        \resumeItem{Achieved \textbf{4th place} in the 2023 \textbf{ICPC North America South Regional} Contest out of \textbf{100+ teams}.}
         \resumeItem{Created and judged problem sets for the UCF High School Programming Contest for \textbf{80+ teams}.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
