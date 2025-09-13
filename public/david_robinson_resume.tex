@@ -93,20 +93,20 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Central Florida}{}
-      {Bachelor of Science in Computer Science, Intelligent Robotic Systems Minor}{Expected May 2026 -- 3.93 GPA}
+      {Bachelor of Science in Computer Science, Intelligent Robotic Systems Minor}{Expected May 2026 -- 3.94 GPA}
       \resumeSubheading
         {\vspace{-1.5em}}{}
-        {Master of Science in Computer Vision}{Expected Start August 2026}
+        {PhD in Computer Science}{Incoming August 2026}
     \educationItem{\textbf{Relevant Coursework}: Computer Vision, Data Structures and Algorithms, Linear Algebra, Artificial Intelligence}
   \resumeSubHeadingListEnd
 
 \section{Technical Skills}
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      \textbf{Languages:}{ Python, C/C++, SQL, Java, JavaScript, R, LaTeX} \\
-      \textbf{Machine Learning:}{ PyTorch, TensorFlow, Scikit-Learn, Transformers, Sentence-Transformers, ONNXRuntime, OpenCV, YOLO, MMDetection, TorchScript, LangChain} \\
-      \textbf{Tools and Platforms:}{ AWS, Docker, Kubernetes, Flask, Git, MongoDB, MySQL, PostgreSQL, Pandas, NumPy, Matplotlib}
       \textbf{Certifications}: AWS Cloud Practitioner, AWS Solutions Architect \\
+      \textbf{Languages:}{ Python, C/C++, SQL, Java, JavaScript, R, LaTeX} \\
+      \textbf{Machine Learning:}{ PyTorch, TensorFlow, Scikit-Learn, Transformers, ONNXRuntime, OpenCV, YOLO, MMDetection, TorchScript} \\
+      \textbf{Tools and Platforms:}{ AWS, Docker, Kubernetes, Flask, Git, MongoDB, MySQL, PostgreSQL, Pandas, NumPy}
     }}
   \end{itemize}
 
@@ -117,7 +117,6 @@
     {UCF Center for Research in Computer Vision}{August 2024 -- Present}
     \resumeItemListStart
       \resumeItem{Applying state-of-the-art 3D pose estimation models to extract joint angles for quantitative stroke mobility analysis.}
-      \resumeItem{Built and annotated a dataset of \textbf{1,000+} Box and Block Test clips (RGB + 2D pose) labeled with four action classes for stroke mobility research.}
       \resumeItem{Benchmarked neural networks (R3D, R2Plus1D, Video Swin Transformer, Video MViT, MotionBERT, PoseConv3D, MS-G3D) for movement analysis, achieving up to \textbf{90.18\%} accuracy on the StrokeVision-Bench dataset.}
     \resumeItemListEnd
     \resumeSubheading
@@ -125,8 +124,14 @@
       {Contract}{March 2025 -- May 2025}
       \resumeItemListStart
         \resumeItem{Designed and trained a neural network using Embedding-LSTM modules and an MLP, achieving \textbf{90.7\%} accuracy and \textbf{93.59\%} precision on a custom dataset of \textbf{4,000} labeled string pairs.}
-        \resumeItem{Engineered features (tokenization, phoneme/metaphone generation, embedding similarity, Levenshtein distance) to enhance classification accuracy.}
-        \resumeItem{Deployed an \textbf{ONNX}-optimized model into a Flask API for real-time inference, accelerating predictions by \textbf{4$\times$}.}
+        \resumeItem{Deployed an ONNX-optimized model through a Flask API, improving inference speed by 4x and supporting efficient batch predictions.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Software Engineering Intern}{Orlando, FL}
+      {Dynamic Animation Systems}{August 2023 - July 2024}
+      \resumeItemListStart
+        \resumeItem{Fine-tuned the Mistral-7B LLM with Hugging Face's Transformers and PEFT libraries to generate simulation scenario files compliant with an XSD schema.}
+        \resumeItem{Designed an ontology for simulation hosting, enabling deployment in on-premises and cloud environments using Docker and Kubernetes, with support for AWS and GCP.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
   
@@ -145,8 +150,7 @@
     \resumeProjectHeading
       {\href{https://github.com/DRobinson4105/accelify}{\textbf{\uline{Accelify}}} $|$ \emph{PyTorch, MongoDB, Pandas, NumPy, Scikit-Learn, Flask, Python}}{}
       \resumeItemListStart
-        \resumeItem{Developed a PyTorch neural network that recommended ServiceNow Technical Accelerators, reducing loss by \textbf{95.8\%} on a dataset of \textbf{2,000} company-product pairs.}
-        \resumeItem{Built a recommendation dataset using TF-IDF and co-occurrence scores on product usage data with \textbf{150+} entries.}
+        \resumeItem{Built a PyTorch recommender system for ServiceNow accelerators on a dataset of \textbf{2,000} company-product pairs, reducing loss by \textbf{95.8\%} and deployed with Flask for inference.}
       \resumeItemListEnd
     \resumeProjectHeading
       {\href{https://github.com/DRobinson4105/bookmate}{\textbf{\uline{BookMate}}} $|$ \emph{PyTorch, Selenium, NextJS 13, Flask, Python, R}}{}
