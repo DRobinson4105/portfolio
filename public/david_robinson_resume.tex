@@ -3,9 +3,9 @@
 % chktex-file 36
 
 \documentclass[letterpaper,11pt]{article}
+\usepackage[letterpaper, top=0.25in, bottom=0.5in, left=0.25in, right=0.25in]{geometry}
 
 \usepackage{latexsym}
-\usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
@@ -20,10 +20,6 @@
 
 \usepackage{charter}
 
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.25in}
 
 \urlstyle{same}
@@ -31,7 +27,7 @@
 \raggedbottom\raggedright\setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
 
 \pdfgentounicode=1
@@ -92,40 +88,29 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Central Florida}{Expected May 2026}
+      {University of Central Florida}{May 2026}
       {Bachelor of Science in Computer Science, Intelligent Robotic Systems Minor}{3.94 GPA}
-    \educationItem{\textbf{Relevant Coursework}: Computer Vision, Data Structures and Algorithms, Linear Algebra, Artificial Intelligence}
   \resumeSubHeadingListEnd
-
-\section{Technical Skills}
-  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-      \textbf{Certifications}: AWS Cloud Practitioner, AWS Solutions Architect \\
-      \textbf{Languages:}{ Python, C/C++, SQL, Java, JavaScript, R, LaTeX} \\
-      \textbf{Machine Learning:}{ PyTorch, TensorFlow, Scikit-Learn, Transformers, ONNXRuntime, OpenCV, YOLO, TorchScript} \\
-      \textbf{Tools and Platforms:}{ AWS, Docker, Kubernetes, Flask, Git, MongoDB, MySQL, PostgreSQL, Pandas, NumPy}
-    }}
-  \end{itemize}
 
 \section{Experience}
   \resumeSubHeadingListStart
   \resumeSubheading
-    {Undergraduate Researcher}{Orlando, FL}
-    {UCF Center for Research in Computer Vision}{August 2024 -- Present}
+    {Undergraduate Researcher}{August 2024 -- Present}
+    {UCF Center for Research in Computer Vision}{Orlando, FL}
     \resumeItemListStart
-      \resumeItem{Applying state-of-the-art 3D pose estimation models to extract joint angles for quantitative stroke mobility analysis.}
+      \resumeItem{Optimizing state-of-the-art 3D pose estimation models to extract joint angles for quantitative stroke mobility analysis.}
       \resumeItem{Benchmarked neural networks (R3D, R2Plus1D, Video Swin Transformer, Video MViT, MotionBERT, PoseConv3D, MS-G3D) for movement analysis, achieving up to \textbf{90.18\%} accuracy on the StrokeVision-Bench dataset.}
     \resumeItemListEnd
     \resumeSubheading
-      {Machine Learning Engineer}{Remote}
-      {Contract}{March 2025 -- May 2025}
+      {Machine Learning Engineer}{March 2025 -- May 2025}
+      {Contract}{Remote}
       \resumeItemListStart
         \resumeItem{Designed and trained a neural network using Embedding-LSTM modules and an MLP, achieving \textbf{90.7\%} accuracy and \textbf{93.59\%} precision on a custom dataset of \textbf{4,000} labeled string pairs.}
         \resumeItem{Deployed an ONNX-optimized model through a Flask API, improving inference speed by 4x and supporting efficient batch predictions.}
       \resumeItemListEnd
     \resumeSubheading
-      {Software Engineering Intern}{Orlando, FL}
-      {Dynamic Animation Systems}{August 2023 - July 2024}
+      {Software Engineering Intern}{August 2023 -- July 2024}
+      {Dynamic Animation Systems}{Orlando, FL}
       \resumeItemListStart
         \resumeItem{Fine-tuned the Mistral-7B LLM with Hugging Face's Transformers and PEFT libraries to generate simulation scenario files compliant with an XSD schema.}
         \resumeItem{Designed an ontology for simulation hosting, enabling deployment in on-premises and cloud environments using Docker and Kubernetes, with support for AWS and GCP.}
@@ -137,7 +122,7 @@
     \resumeSubheading
       {\href{https://arxiv.org/abs/2509.07994}{\textbf{\uline{StrokeVision-Bench: A Multimodal Video and 2D Pose Benchmark for Tracking Stroke Recovery}}}}{} 
       {\textbf{David Robinson}, Animesh Gupta, Rizwan Qureshi, Qiushi Fu, Mubarak Shah}{}
-      \vspace{0em}
+      \vspace{0.5em}
 
       \textit{Accepted to IEEE MLSP 2025}
   \resumeSubHeadingListEnd
@@ -147,8 +132,8 @@
     \resumeProjectHeading
       {\href{https://github.com/DRobinson4105/accelify}{\textbf{\uline{Accelify}}} $|$ \emph{PyTorch, MongoDB, Pandas, NumPy, Scikit-Learn, Flask, Python}}{}
       \resumeItemListStart
-        \resumeItem{Built a PyTorch recommender system for ServiceNow accelerators on a dataset of \textbf{2,000} company-product pairs, reducing loss by \textbf{95.8\%} and deployed with Flask for inference.}
-        \resumeItem{Built a recommendation dataset using TF-IDF and co-occurrence scores on product usage data with 150+ entries.}
+        \resumeItem{Developed a PyTorch recommender system for ServiceNow accelerators on a dataset of \textbf{2,000} company-product pairs, reducing loss by \textbf{95.8\%} and deployed with Flask for inference.}
+        \resumeItem{Built a recommendation dataset using TF-IDF and co-occurrence scores on product usage data with \textbf{150+ entries}.}
       \resumeItemListEnd
     \resumeProjectHeading
       {\href{https://github.com/DRobinson4105/bookmate}{\textbf{\uline{BookMate}}} $|$ \emph{PyTorch, Selenium, NextJS 13, Flask, Python, R}}{}
@@ -156,18 +141,34 @@
         \resumeItem{Trained the \textbf{YOLOv8} model for identifying ISBNs, achieving \textbf{98.3 mAP} on a combined barcode dataset sourced from multiple public datasets.}
         \resumeItem{Created a PyTorch regression model to determine optimal selling prices for books, reaching \textbf{3.9 MSE Loss} on a self-collected dataset of \textbf{200} Amazon listings.}
       \resumeItemListEnd
+    \resumeProjectHeading
+      {\href{https://github.com/DRobinson4105/Simply-ASL}{\textbf{\uline{SimplyASL}}} $|$ \emph{PyTorch, Swift, Flask, OpenCV, OpenAI, LangChain, NumPy}}{}
+      \resumeItemListStart
+        \resumeItem{Built a dataset mapping \textbf{70 distinct ASL signs} to 2D pose representations using \textbf{Meta AI’s Sapiens} pose estimation model.}
+        \resumeItem{Constructed an LSTM-based model to interpolate pose keypoints and generate temporally-smooth ASL transitions.}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-\section{Awards and Competitions}
+\section{Competitions and Awards}
   \resumeSubHeadingListStart
     \resumeSubheading
-    {1st Place --- Waymo Mobility Challenge, ShellHacks 2025}{}{}{}
-    \vspace{-1.5em}
+    {1st Place of 26 Teams --- \href{https://devpost.com/software/birdseye-ck0j12}{\uline{Waymo Mobility Challenge, ShellHacks 2025}} (BirdsEye)}{}{}{}
+    \vspace{-1em}
     \resumeSubheading
-    {1st Place --- Assurant Way Challenge, ShellHacks 2025}{}{}{}
-    \vspace{-1.5em}
+    {1st Place of 104 Teams --- \href{https://devpost.com/software/birdseye-ck0j12}{\uline{Assurant Way Challenge, ShellHacks 2025}} (BirdsEye)}{}{}{}
+    \vspace{-1em}
     \resumeSubheading
-    {4th Place --- 2023 ICPC North America South Regional Contest}{}{}{}
+    {4th Place of 113 Teams --- \href{https://nasouth23.kattis.com/contests/nasouth23d2hidden/standings}{\uline{Division 2, ICPC NA Big South Regional 2023}} (UCF-JV Saragossa)}{}{}{}
   \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Certifications}: AWS Cloud Practitioner, AWS Solutions Architect \\
+      \textbf{Languages:}{ Python, C/C++, SQL, Java, JavaScript, R, LaTeX} \\
+      \textbf{Machine Learning:}{ PyTorch, TensorFlow, Scikit-Learn, Transformers, ONNXRuntime, OpenCV, YOLO, TorchScript} \\
+      \textbf{Tools and Platforms:}{ AWS, Docker, Kubernetes, Flask, Git, MongoDB, MySQL, PostgreSQL, Pandas, NumPy}
+    }}
+  \end{itemize}
 
 \end{document}
