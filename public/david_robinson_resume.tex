@@ -92,6 +92,7 @@
       {Bachelor of Science in Computer Science, Intelligent Robotic Systems Minor}{3.94 GPA}
   \resumeSubHeadingListEnd
 
+\vspace{-0.5em}
 \section{Experience}
   \resumeSubHeadingListStart
   \resumeSubheading
@@ -99,6 +100,7 @@
     {UCF Center for Research in Computer Vision}{Orlando, FL}
     \resumeItemListStart
       \resumeItem{Optimizing state-of-the-art 3D pose estimation models to extract joint angles for quantitative stroke mobility analysis.}
+      \resumeItem{Built and annotated a dataset of \textbf{1,000+} Box and Block Test clips (RGB + 3D pose) labeled with four action classes for stroke mobility research, running inference with \textbf{WiLoR} for 3D pose estimation.}
       \resumeItem{Benchmarked neural networks (R3D, R2Plus1D, Video Swin Transformer, Video MViT, MotionBERT, PoseConv3D, MS-G3D) for movement analysis, achieving up to \textbf{90.18\%} accuracy on the StrokeVision-Bench dataset.}
     \resumeItemListEnd
     \resumeSubheading
@@ -106,7 +108,7 @@
       {Contract}{Remote}
       \resumeItemListStart
         \resumeItem{Designed and trained a neural network using Embedding-LSTM modules and an MLP, achieving \textbf{90.7\%} accuracy and \textbf{93.59\%} precision on a custom dataset of \textbf{4,000} labeled string pairs.}
-        \resumeItem{Deployed an ONNX-optimized model through a Flask API, improving inference speed by 4x and supporting efficient batch predictions.}
+        \resumeItem{Deployed the ONNX-optimized PyTorch model through a Flask API, improving inference speed by \textbf{4x}.}
       \resumeItemListEnd
     \resumeSubheading
       {Software Engineering Intern}{August 2023 -- July 2024}
@@ -122,7 +124,7 @@
     \resumeSubheading
       {\href{https://arxiv.org/abs/2509.07994}{\textbf{\uline{StrokeVision-Bench: A Multimodal Video and 2D Pose Benchmark for Tracking Stroke Recovery}}}}{} 
       {\textbf{David Robinson}, Animesh Gupta, Rizwan Qureshi, Qiushi Fu, Mubarak Shah}{}
-      \vspace{0.5em}
+      \vspace{0.25em}
 
       \textit{Accepted to IEEE MLSP 2025}
   \resumeSubHeadingListEnd
@@ -133,7 +135,7 @@
       {\href{https://github.com/DRobinson4105/birds-eye}{\textbf{\uline{BirdsEye}}} $|$ \emph{PyTorch, YOLOv11, Flask, OpenCV, NumPy, FFmpeg}}{}
       \resumeItemListStart
         \resumeItem{Built a traffic-camera analysis system to estimate lane-level vehicle speeds using YOLOv11 and real-time video streams.}
-        \resumeItem{Ingested live Florida Department of Transportation HLS feeds through FFmpeg, buffering and decoding frames for low-latency inference.}
+        \resumeItem{Ingested live Florida Department of Transportation HLS feeds through FFmpeg, buffering and decoding frames.}
         \resumeItem{Detected vehicles with YOLOv11, pretrained on COCO,  compared bounding boxes across frames to track moving vehicles, and computed lane-level vehicle speeds by measuring crossing times over defined road segments.}
       \resumeItemListEnd
     \resumeProjectHeading
@@ -152,22 +154,19 @@
 
 \section{Competitions and Awards}
   \resumeSubHeadingListStart
-    \resumeSubheading
-    {1st Place of 26 Teams --- \href{https://devpost.com/software/birdseye-ck0j12}{\uline{Waymo Mobility Challenge, ShellHacks 2025}} (BirdsEye)}{}{}{}
-    \vspace{-1em}
-    \resumeSubheading
-    {1st Place of 104 Teams --- \href{https://devpost.com/software/birdseye-ck0j12}{\uline{Assurant Way Challenge, ShellHacks 2025}} (BirdsEye)}{}{}{}
-    \vspace{-1em}
-    \resumeSubheading
-    {4th Place of 113 Teams --- \href{https://nasouth23.kattis.com/contests/nasouth23d2hidden/standings}{\uline{Division 2, ICPC NA Big South Regional 2023}} (UCF-JV Saragossa)}{}{}{}
+  \small{\item{
+    \textbf{1st Place of 26 Teams} --- \href{https://devpost.com/software/birdseye-ck0j12}{\uline{Waymo Mobility Challenge, ShellHacks 2025}} (BirdsEye) \\
+    \textbf{1st Place of 104 Teams} --- \href{https://devpost.com/software/birdseye-ck0j12}{\uline{Assurant Way Challenge, ShellHacks 2025}} (BirdsEye) \\
+    \textbf{4th Place of 113 Teams} --- \href{https://nasouth23.kattis.com/contests/nasouth23d2hidden/standings}{\uline{Division 2, ICPC NA Big South Regional 2023}} (UCF-JV Saragossa)
+  }}
   \resumeSubHeadingListEnd
-\vspace{-2em}
+\vspace{-1em}
 \section{Technical Skills}
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
       \textbf{Certifications}: AWS Solutions Architect, AWS Cloud Practitioner \\
       \textbf{Languages:}{ Python, C/C++, SQL, Java, JavaScript, R, LaTeX} \\
-      \textbf{Machine Learning:}{ PyTorch, TensorFlow, Scikit-Learn, Transformers, ONNXRuntime, OpenCV, YOLO, TorchScript} \\
+      \textbf{Machine Learning:}{ PyTorch, TensorFlow, Scikit-Learn, Transformers, ONNXRuntime, OpenCV, YOLO, TorchScript, MMDetection} \\
       \textbf{Tools and Platforms:}{ AWS, Docker, Kubernetes, Flask, Git, MongoDB, MySQL, PostgreSQL, Pandas, NumPy}
     }}
   \end{itemize}
