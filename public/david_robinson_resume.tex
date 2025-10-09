@@ -27,7 +27,7 @@
 \raggedbottom\raggedright\setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-10pt}\scshape\raggedright\large
+  \vspace{-13pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
 
 \pdfgentounicode=1
@@ -130,22 +130,23 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeProjectHeading
+      {\href{https://github.com/DRobinson4105/birds-eye}{\textbf{\uline{BirdsEye}}} $|$ \emph{PyTorch, YOLOv11, Flask, OpenCV, NumPy, FFmpeg}}{}
+      \resumeItemListStart
+        \resumeItem{Built a traffic-camera analysis system to estimate lane-level vehicle speeds using YOLOv11 and real-time video streams.}
+        \resumeItem{Ingested live Florida Department of Transportation HLS feeds through FFmpeg, buffering and decoding frames for low-latency inference.}
+        \resumeItem{Detected vehicles with YOLOv11, pretrained on COCO,  compared bounding boxes across frames to track moving vehicles, and computed lane-level vehicle speeds by measuring crossing times over defined road segments.}
+      \resumeItemListEnd
+    \resumeProjectHeading
       {\href{https://github.com/DRobinson4105/accelify}{\textbf{\uline{Accelify}}} $|$ \emph{PyTorch, MongoDB, Pandas, NumPy, Scikit-Learn, Flask, Python}}{}
       \resumeItemListStart
         \resumeItem{Developed a PyTorch recommender system for ServiceNow accelerators on a dataset of \textbf{2,000} company-product pairs, reducing loss by \textbf{95.8\%} and deployed with Flask for inference.}
         \resumeItem{Built a recommendation dataset using TF-IDF and co-occurrence scores on product usage data with \textbf{150+ entries}.}
       \resumeItemListEnd
     \resumeProjectHeading
-      {\href{https://github.com/DRobinson4105/bookmate}{\textbf{\uline{BookMate}}} $|$ \emph{PyTorch, Selenium, NextJS 13, Flask, Python, R}}{}
+      {\href{https://github.com/DRobinson4105/bookmate}{\textbf{\uline{BookMate}}} $|$ \emph{PyTorch, Selenium, NextJS 13, Flask, Python, R, YOLOv8}}{}
       \resumeItemListStart
         \resumeItem{Trained the \textbf{YOLOv8} model for identifying ISBNs, achieving \textbf{98.3 mAP} on a combined barcode dataset sourced from multiple public datasets.}
         \resumeItem{Created a PyTorch regression model to determine optimal selling prices for books, reaching \textbf{3.9 MSE Loss} on a self-collected dataset of \textbf{200} Amazon listings.}
-      \resumeItemListEnd
-    \resumeProjectHeading
-      {\href{https://github.com/DRobinson4105/Simply-ASL}{\textbf{\uline{SimplyASL}}} $|$ \emph{PyTorch, Swift, Flask, OpenCV, OpenAI, LangChain, NumPy}}{}
-      \resumeItemListStart
-        \resumeItem{Built a dataset mapping \textbf{70 distinct ASL signs} to 2D pose representations using \textbf{Meta AI’s Sapiens} pose estimation model.}
-        \resumeItem{Constructed an LSTM-based model to interpolate pose keypoints and generate temporally-smooth ASL transitions.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -160,7 +161,7 @@
     \resumeSubheading
     {4th Place of 113 Teams --- \href{https://nasouth23.kattis.com/contests/nasouth23d2hidden/standings}{\uline{Division 2, ICPC NA Big South Regional 2023}} (UCF-JV Saragossa)}{}{}{}
   \resumeSubHeadingListEnd
-
+\vspace{-2em}
 \section{Technical Skills}
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
